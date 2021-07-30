@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'tc%p3z*=t+mk=wvvb&^cv+a3z)=#%z##ct!vxd+@c4z-b6x*ga'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','meetup-chatapplication.herokuapp.com']
 
