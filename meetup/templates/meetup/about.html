@@ -1,0 +1,276 @@
+
+{% load static %}
+<!--<!DOCTYPE html>
+<html>
+<head>
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'blog/swiper.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'blog/magnific-popup.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'blog/fontawesome-all.css' %}">
+
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+   <!-- SEO Meta Tags -->
+   <meta name="description" content="Your description">
+   <meta name="author" content="Your name">
+
+   <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+   <meta property="og:site_name" content="" /> <!-- website name -->
+   <meta property="og:site" content="" /> <!-- website link -->
+   <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+   <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+   <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+   <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+   <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+   <!-- Webpage Title -->
+   <title>MeetUp Chat Application</title>
+   
+ 
+   
+   <!-- Favicon  -->
+   <link rel="icon" href="{% static 'blog/22.png' %}">
+
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+          
+          <!-- Text Logo - Use this if you don't have a graphic logo -->
+          <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Meet Up</a> -->
+
+          <!-- Image Logo -->
+          <a class="navbar-brand logo-image" href="{% url 'login' %}"><img src="{% static 'blog/11.png' %}" alt="alternative"></a> 
+
+          <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#intro">Intro</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#details">Details</a>
+                  </li>
+              </ul>
+              <span class="nav-item">
+                  <a class="btn-solid-sm page-scroll" href="{% url 'signup' %}">Sign Up</a>
+              </span>
+          </div> <!-- end of navbar-collapse -->
+      </div> <!-- end of container -->
+  </nav> <!-- end of navbar -->
+  <!-- end of navigation -->
+
+
+  <!-- Header -->
+  <header id="header" class="header">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-5">
+                  <div class="text-container">
+                      <h1 class="h1-large">Discover new people online </h1>
+                      <p class="p-large">Meetup is a online chatting platform which offers amazing features for people to chat with others based on your interests</p>
+                      <a class="btn-solid-lg" href="{% url 'signup' %}">Sign up for free</a>
+                      <a class="btn-outline-lg page-scroll" href="{% url 'login' %}">Login</a>
+                  </div> <!-- end of text-container -->
+              </div> <!-- end of col -->
+              <div class="col-lg-7">
+                  <div class="image-container">
+                      <img class="img-fluid" src="{% static 'blog/44.jpg' %}" alt="alternative">
+                  </div> <!-- end of image-container -->
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+      </div> <!-- end of container -->
+  </header> <!-- end of header -->
+  <!-- end of header -->
+
+
+  <!-- Introduction -->
+  <div id="intro" class="basic-1">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-7">
+                  <img class="img-fluid" src="{% static 'blog/33.jpg' %}" alt="alternative">
+              </div> <!-- end of col -->
+              <div class="col-lg-5">
+                  <div class="text-container">
+                      <h2>MeetUp is here to help you discover people based on your interests</h2>
+                      <p>People can signup on the website and start exploring the different people based on your interests and allows you to interact with them.</p>
+                      <a class="btn-solid-reg" href="{% url 'signup' %}">Sign up</a>
+                  </div> <!-- end of text-container -->
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+      </div> <!-- end of container -->
+  </div> <!-- end of basic-1 -->
+  <!-- end of introduction -->
+
+
+  <!-- Features -->
+  <div id="features" class="cards-1">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h2 class="h2-heading">Check out all the features</h2>
+                  <p class="p-heading">MeetUp iswere designed to help online users to interact with different people with same interests and have some discussions with them
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+          <div class="row">
+              <div class="col-lg-12">
+                  
+                  <!-- Card -->
+                  <div class="card">
+                      <div class="card-icon-wrapper">
+                          <div class="card-icon">
+                              <span class="fas fa-headphones-alt green"></span>
+                          </div>
+                      </div>
+                      <div class="card-body">
+                          <h4 class="card-title">Connecting online</h4>
+                          <p>MeetUp has multiple functions which allows to explore people over the platform</p>
+                          <a class="read-more no-line" href="{% url 'signup' %}">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                      </div>
+                  </div>
+                  <!-- end of card -->
+
+                  <!-- Card -->
+                  <div class="card">
+                      <div class="card-icon-wrapper">
+                          <div class="card-icon">
+                              <span class="far fa-clipboard blue"></span>
+                          </div>
+                      </div>
+                      <div class="card-body">
+                          <h4 class="card-title">Building Community</h4>
+                          <p>Through this platform people can form a community who are grouped on their interests</p>
+                          <a class="read-more no-line" href="{% url 'signup' %}">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                      </div>
+                  </div>
+                  <!-- end of card -->
+
+                  <!-- Card -->
+                  <div class="card">
+                      <div class="card-icon-wrapper">
+                          <div class="card-icon">
+                              <span class="far fa-comments purple"></span>
+                          </div>
+                      </div>
+                      <div class="card-body">
+                          <h4 class="card-title">Chatting with people</h4>
+                          <p>Users can chat with other users having similar interests and can have good interactions</p>
+                          <a class="read-more no-line" href="{% url 'signup' %}">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                      </div>
+                  </div>
+                  <!-- end of card -->
+
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+      </div> <!-- end of container -->
+  </div> <!-- end of cards-1 -->
+  <!-- end of features -->
+
+
+
+  <!-- Newsletter -->
+<div id="details" class="form-1">
+  <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h2 class="h2-heading">Subscribe And Follow Us</h2>
+                  <p class="p-heading">Be part of the platform and follow us on Twitter via <a href="#your-link">@MeetUp</a> and subscribe to the newsletter for news and more updates</p>
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+          <div class="row">
+              <div class="col-lg-12">
+                  
+                  <!-- Newsletter Form -->
+                  <form>
+                      <div class="form-group mail">
+                          <input type="email" class="form-control-input" id="nemail" required>
+                          <label class="label-control" for="nemail">Email address</label>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group">
+                          <button type="submit" class="form-control-submit-button">Subscribe</button>
+                      </div>
+                      <div class="form-message">
+                          <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                      </div>
+                  </form>
+<div class="footer-col third">
+                      <span class="fa-stack" >
+                          <a href="#your-link" >
+                              <i class="fas fa-circle fa-stack-2x" style="color:Tomato;"></i>
+                              <i class="fab fa-facebook-f fa-stack-1x"></i>
+                          </a>
+                      </span>
+                      <span class="fa-stack">
+                          <a href="#your-link">
+                              <i class="fas fa-circle fa-stack-2x" style="color:Tomato;"></i>
+                              <i class="fab fa-twitter fa-stack-1x"></i>
+                          </a>
+                      </span>
+                      <span class="fa-stack">
+                          <a href="#your-link">
+                              <i class="fas fa-circle fa-stack-2x" style="color:Tomato;"></i>
+                              <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                          </a>
+                      </span>
+                      <span class="fa-stack">
+                          <a href="#your-link">
+                              <i class="fas fa-circle fa-stack-2x" style="color:Tomato;"></i>
+                              <i class="fab fa-instagram fa-stack-1x"></i>
+                          </a>
+                      </span>
+                      <p class="p-small">We would love to hear from you <a href="mailto:MeetUp@site.com"><strong>MeetUp@site.com</strong></a></p>
+                  </div> 
+                  <!-- end of newsletter form -->
+                  
+              </div> <!-- end of col -->
+          </div> <!-- end of row -->
+      </div> <!-- end of container -->
+  </div> <!-- end of form-1 -->
+  <!-- end of newsletter -->
+
+
+ 
+    
+  <!-- Scripts -->
+  <script src="{% static 'blog/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="{% static 'blog/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+  <script src="{% static 'blog/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="{% static 'blog/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="{% static 'blog/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+  <script src="{% static 'blog/scripts.js' %}"></script> <!-- Custom scripts -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+ 	
